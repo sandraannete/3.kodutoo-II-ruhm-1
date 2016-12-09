@@ -79,7 +79,33 @@
 	</p>
 
 
-	<h2>Salvesta auto</h2>
+		<br><br>
+<h2>Salvesta oma lemmikseriaalid</h2>
+		<form method="POST">
+		<input name="seriesname" placeholder="Seriaali nimi" type="text">
+		<input type="submit" value="Salvesta">
+		<br>
+
+<h2>Leia infot seriaali kohta </h2>
+		<form method="POST">
+
+		<form name="series">
+			<select name="menu" onChange="window.document.location.href=this.options[this.selectedIndex].value;" 
+			<option selected="selected">Vali üks</option>
+				<option value="http://www.imdb.com/title/tt0475784/episodes?ref_=tt_ov_epl">Westworld</option>
+				<option value="http://www.imdb.com/title/tt1844624/episodes?ref_=tt_ov_epl">American Horror Story</option>
+				<option value="http://www.imdb.com/title/tt1520211/episodes?ref_=tt_ov_epl">The Walking Dead</option>
+				<option value="http://www.imdb.com/title/tt1826940/episodes?ref_=tt_ov_epl">New Girl</option>
+				<option value="http://www.imdb.com/title/tt1442437/episodes?ref_=tt_ov_epl">Modern Family</option>
+				<option value="http://www.imdb.com/title/tt0944947/episodes?ref_=tt_ov_epl">Game Of Thrones</option>
+				<option value="http://www.imdb.com/title/tt2306299/episodes?season=4">Vikings</option>
+				<option value="http://www.imdb.com/title/tt2707408/episodes?ref_=tt_ov_epl">Narcos</option>
+				<option value="http://www.imdb.com/title/tt4158110/episodes?season=2">Mr.Robot</option>
+			</select>
+		</form>	
+		<br><br>
+
+<h2>Salvesta auto</h2>
 	<form method="POST">
 	
 	<label>Auto nr</label><br>
@@ -95,7 +121,7 @@
 	
 	</form>
 	
-	<h2>Autod</h2>
+<h2>Autod</h2>
 	
 	<form>
 		<input type="search" name="q" value="<?=$q;?>">
